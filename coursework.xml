@@ -1,0 +1,124 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+<!-- Greetings and Politeness -->
+<category> <pattern> HELLO </pattern>
+  <template>Hello I am your personalised tutor. What is your name?</template> </category>
+  
+<category> <pattern>MY NAME IS *</pattern> 
+ <template> Hello! How are you?<think><set name = "username"> <star/></set></think></template></category>  
+ 
+<category> <pattern> HELLO * </pattern>
+  <template><srai>HELLO</srai></template> </category>
+
+<category> <pattern> HI </pattern>
+  <template><srai>HELLO</srai></template> </category>
+
+<category> <pattern> HI * </pattern>
+  <template><srai>HELLO</srai></template> </category> 
+  
+<category> <pattern> HOW ARE YOU </pattern>
+  <template>I'm functioning within normal parameters, thanks for asking.</template></category>
+  
+<category><pattern> I AM GOOD </pattern>
+  <template>That's good to know. Would you like me to assess you?</template></category>
+  
+<category><pattern> I AM WELL </pattern>
+  <template>That's good to know. Would you like me to assess you?</template></category>
+
+<category><pattern> WHAT CAN WE DISCUSS ABOUT </pattern>
+  <template>I am your AITutor! Would you like me to assess you?</template></category>
+  
+
+<category><pattern> WHAT CAN WE TALK ABOUT </pattern>
+  <template>I am your AITutor! Would you like me to assess you?</template></category>
+
+<category><pattern> I AM FINE </pattern>
+  <template>That's good to know. What would you like to discuss about?</template></category>
+  
+<category><pattern> BYE </pattern>
+  <template>#0$Bye! Nice talking to you. You take care now.</template></category>
+  
+<category><pattern> BYE </pattern>
+  <template>#1$HERE IS YOUR QUESTION</template></category>
+
+<category><pattern> GOODBYE </pattern>
+  <template><srai>BYE</srai></template></category>
+
+<category><pattern> EXIT </pattern>
+  <template><srai>BYE</srai></template></category>
+
+<category> <pattern> THANKS </pattern>
+  <template>You are welcome.</template></category>
+
+<category> <pattern> THANK YOU </pattern>
+  <template><srai>THANKS</srai></template></category>
+
+<category> <pattern> CHEERS </pattern>
+  <template>Sure mate.</template></category>
+
+<category> <pattern> CHEERS * </pattern>
+  <template>Sure mate.</template></category>
+
+<!--- Multiplchoice replies -->
+  
+<category><pattern> YES</pattern>
+  <template>#1$</template></category>
+  
+<category><pattern> A </pattern>
+  <template>#2$</template></category>
+
+<category><pattern> B </pattern>
+  <template>#2$</template></category>
+  
+<category><pattern> C </pattern>
+  <template>#2$</template></category>
+  
+<category><pattern> D </pattern>
+  <template>#2$</template></category>
+  
+<category><pattern> 1 </pattern>
+  <template>#7$</template></category>
+
+<category><pattern> 2 </pattern>
+  <template>#7$</template></category>
+  
+<category><pattern> 3 </pattern>
+  <template>#7$</template></category>
+  
+<category><pattern> 4 </pattern>
+  <template>#7$</template></category>
+  
+  
+<!--- customize revision -->
+<category><pattern> CUSTOMIZE MY REVISION</pattern>
+  <template>#3$</template></category>
+  
+<category><pattern> CONTINUE </pattern>
+  <template>#3$</template></category>
+  
+<!--- Feedback -->
+  
+<category><pattern> END </pattern>
+  <template>#4$</template></category>
+  
+<category><pattern> CAN I GET A QUESTION ABOUT * </pattern>
+  <template>#6$<star/></template></category>
+  
+<category><pattern> CONFIDENCE * </pattern>
+  <template>#8$<star/></template></category>
+   
+<category><pattern> RECCOMENDATION * </pattern>
+  <template>#9$<star/></template></category>
+  
+<category><pattern> FEEDBACK * </pattern>
+  <template>#10$<star/></template></category>
+  
+<category><pattern> FUTURE TOPICS * </pattern>
+  <template>#11$<star/></template></category>
+
+
+<!-- Default reaction -->
+<category><pattern> * </pattern>
+  <template>#99$<star index="1"/></template></category>
+
+</aiml>
